@@ -3,9 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>learning-html-and-css</title>
+    <!-- <style>
+        table {
+          width: 70%;
+          border-collapse: collapse;
+        }
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 15px;
+        }
+        tr:nth-child(odd) { background-color: yellowgreen; }
+        tr:nth-child(even) { background-color: goldenrod; }
+      </style> -->
 </head>
 <body>
+    <hr>
+    <h1>Danh sách không sắp xếp</h1>
+    <ul style="list-style-type: armenian;">
+        <li>Coffee</li>
+        <ul>
+            <li>Black</li>
+            <li>Bac Xiu</li>
+        </ul>
+        <li>Tea</li>
+        <li>Water</li>
+      </ul>
+      <h1>Danh sách có sắp xếp:</h1>
+    <ol type="a" start="12">
+        <li>Coffee</li>
+        <ol>
+            <li>Black</li>
+            <li>Bac Xiu</li>
+        </ol>
+        <li>Tea</li>
+        <li>Water</li>
+    </ol>
+    <h1>Danh sách dạng mô tả:</h1>
+    <dl>
+       <dt>Coffee</dt>
+       <dd>- Pure black</dd>
+       <dt>Tea</dt>
+       <dd>- Shan Tuyet</dd>
+     </dl>
+    <hr>
+    <h1>Colgroup: Nhóm nhiều cột lại với nhau</h1>
+    <table>
+        <colgroup>
+          <col span="3" style="background-color: pink">
+          <col span="4" style="background-color: lightgreen">
+        </colgroup>
+        <tr>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>TUE</th>
+          <th>TUE</th>
+          <th>TUE</th>
+          <th>TUE</th>
+          <th>TUE</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+   </table>
+    <hr>
+    <h1>rowspan cho bảng nằm ngang</h1>
+    <table>
+        <tr>
+          <th>Name</th>
+          <td>Trung Quân 01</td>
+          <td>Trung Quân 02</td>
+        </tr>
+        <tr>
+          <th rowspan="4">Email</th>
+          <td>trungquandev.official@gmail.com</td>
+          <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+          <td>trungquandev.official@gmail.com</td>
+          <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+            <td>trungquandev.official@gmail.com</td>
+            <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+            <td>trungquandev.official@gmail.com</td>
+            <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+            <th>heading</th>
+            <td>trungquandev.official@gmail.com</td>
+            <td>trungquandev.official@gmail.com</td>
+        </tr>
+      </table>
+     
+    <hr>
+    <h1>colspan cho bảng nằm dọc</h1>
+    <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Trung</td>
+          <td>Quân</td>
+          <td>trungquandev.official@gmail.com</td>
+        </tr>
+      </table>
+    <hr>
+    <h1>table</h1>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>YouTube</th>
+        </tr>
+        <tr>
+          <td>Trung Quân</td>
+          <td>trungquandev.official@gmail.com</td>
+          <td>Trungquandev Official</td>
+        </tr>
+      </table>
+    <hr>
+    <h1>favicon</h1>
+    <hr>
+    <picture>
+        <source media="(min-width: 776px)" srcset="hinh-hoc.jpg">
+        <source media="(min-width: 480px)" srcset="bg1.png">
+        <img src="information.png">
+    </picture>
+    <hr>
+    <p style="background-image: url('bg1.png'); font-size: 30px; background-repeat: no-repeat; background-size: cover; background-attachment: scroll;">
+        Đoạn văn là một đơn vị văn bản nhỏ,<br> 
+        được sắp xếp theo một luồng ý để trình bày một ý kiến, <br>
+        một suy nghĩ hoặc một phần của nội dung. <br>
+        Nó bao gồm một tập hợp các câu văn có liên quan, <br> 
+        Đoạn văn là một đơn vị văn bản nhỏ,<br> 
+        được sắp xếp theo một luồng ý để trình bày một ý kiến, <br>
+        một suy nghĩ hoặc một phần của nội dung. <br>
+        Nó bao gồm một tập hợp các câu văn có liên quan, <br>
+        Đoạn văn là một đơn vị văn bản nhỏ,<br> 
+        được sắp xếp theo một luồng ý để trình bày một ý kiến, <br>
+        một suy nghĩ hoặc một phần của nội dung. <br>
+        Nó bao gồm một tập hợp các câu văn có liên quan, <br>
+        Đoạn văn là một đơn vị văn bản nhỏ,<br> 
+        được sắp xếp theo một luồng ý để trình bày một ý kiến, <br>
+        một suy nghĩ hoặc một phần của nội dung. <br>
+        Nó bao gồm một tập hợp các câu văn có liên quan, <br>
+        Đoạn văn là một đơn vị văn bản nhỏ,<br> 
+        được sắp xếp theo một luồng ý để trình bày một ý kiến, <br>
+        một suy nghĩ hoặc một phần của nội dung. <br>
+        Nó bao gồm một tập hợp các câu văn có liên quan, <br>
+        có mục đích chung và được sắp xếp một cách logic</p>
     <hr>
     <img src="hinh-hoc.jpg" alt="hinh hoc" usemap="#my-img-map">
     <map name="my-img-map">
